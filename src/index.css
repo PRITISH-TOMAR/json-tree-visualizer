@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+
+:root[data-theme='light'] {
+  --color-object: #e2e8f0;
+  --color-object-soft: rgba(226, 232, 240, 0.6);
+
+  --color-array: #fef3c7;
+  --color-array-soft: rgba(254, 243, 199, 0.6);
+
+  --color-primitive: #f3f4f6;
+  --color-primitive-soft: rgba(243, 244, 246, 0.6);
+
+  --color-bg: #ffffff;
+  --color-bg-soft: rgba(255, 255, 255, 0.8);
+
+  --color-text: #1f2937;
+  --color-text-muted: #6b7280;
+  --color-text-accent: #2563eb;
+}
+
+:root[data-theme='dark'] {
+  --color-object: #334155;
+  --color-object-soft: rgba(51, 65, 85, 0.6);
+
+  --color-array: #78350f;
+  --color-array-soft: rgba(120, 53, 15, 0.6);
+
+  --color-primitive: #1e293b;
+  --color-primitive-soft: rgba(30, 41, 59, 0.6);
+
+  --color-bg: #0f172a;
+  --color-bg-soft: rgba(201, 209, 228, 0.71);
+
+  --color-text: #f9fafb;
+  --color-text-muted: #94a3b8;
+  --color-text-accent: #38bdf8;
+}
+
+:root[data-theme='ocean'] {
+  --color-object: #3b82f6;
+  --color-object-soft: rgba(59, 130, 246, 0.5);
+
+  --color-array: #06b6d4;
+  --color-array-soft: rgba(6, 182, 212, 0.5);
+
+  --color-primitive: #67e8f9;
+  --color-primitive-soft: rgba(103, 232, 249, 0.5);
+
+  --color-bg: #e0f2fe;
+  --color-bg-soft: rgba(224, 242, 254, 0.9);
+
+  --color-text: #0c4a6e;
+  --color-text-muted: #38bdf8;
+  --color-text-accent: #1e40af;
+}
+
+:root[data-theme='sunset'] {
+  --color-object: #f59e0b;
+  --color-object-soft: rgba(245, 158, 11, 0.5);
+
+  --color-array: #fb7185;
+  --color-array-soft: rgba(251, 113, 133, 0.5);
+
+  --color-primitive: #fef3c7;
+  --color-primitive-soft: rgba(254, 243, 199, 0.5);
+
+  --color-bg: #fff7ed;
+  --color-bg-soft: rgba(255, 247, 237, 0.9);
+
+  --color-text: #7c2d12;
+  --color-text-muted: #b45309;
+  --color-text-accent: #dc2626;
+}
+
+
+@layer utilities {
+
+  .bg-object { background-color: var(--color-object); }
+  .bg-array { background-color: var(--color-array); }
+  .bg-primitive { background-color: var(--color-primitive); }
+  .bg-bg { background-color: var(--color-bg); }
+
+
+  .bg-object-soft { background-color: var(--color-object-soft); }
+  .bg-array-soft { background-color: var(--color-array-soft); }
+  .bg-primitive-soft { background-color: var(--color-primitive-soft); }
+  .bg-bg-soft { background-color: var(--color-bg-soft); }
+
+
+  .text-text { color: var(--color-text); }
+  .text-muted { color: var(--color-text-muted); }
+  .text-accent { color: var(--color-text-accent); }
+
+  .border-object { border-color: var(--color-object); }
+  .border-array { border-color: var(--color-array); }
+  .border-primitive { border-color: var(--color-primitive); }
+}
+
+
+* {
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
