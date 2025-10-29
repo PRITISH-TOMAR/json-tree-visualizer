@@ -1,12 +1,12 @@
-import { THEMES } from "../../variables/variables";
-import { useTheme } from "../store/theme/handleTheme";
-import { ThemeIcons } from "../assets/icons/themeIcons";
+import { THEMES } from "../../../variables/variables";
+import { useTheme } from "../../store/theme/handleTheme";
+import { ThemeIcons } from "../../assets/icons/ThemeIcons";
 
 export default function ThemeSwitcher() {
   const { theme, handleThemeChange } = useTheme();
 
   return (
-    <div className="fixed top-4 right-4 flex gap-2 z-50">
+    <div className="top-4 right-4 flex gap-2 z-50 ">
       {Object.entries(THEMES).map(([key, value]) => (
         <button
           key={key}
