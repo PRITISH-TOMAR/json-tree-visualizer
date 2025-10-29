@@ -16,6 +16,7 @@ export const THEMES = {
 
 export const LOCAL_STORAGE_KEYS = {
     THEME: 'app-theme',
+    JSON_INPUT: 'jsonInput',
 }
 
 export const DEFAULTS = {

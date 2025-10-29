@@ -4,7 +4,7 @@ import JsonInputBox from "../json-input/textBox/JsonInputBox";
 const JsonEngine = () => {
   return (
     <>
-      <div className="flex md:flex-row flex-col justify-between items-center min-w-full sm:px-12 px-2 sm:py-8 py-2 gap-4 ">
+      <div className="flex md:flex-row flex-col justify-between items-center min-w-full sm:px-12 px-2  gap-4 ">
         {/* <div className="flex-1 border-2 "> */}
           <JsonInputBox />
         {/* </div> */}
