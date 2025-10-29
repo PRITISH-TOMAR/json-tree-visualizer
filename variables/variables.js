@@ -28,3 +28,9 @@ export const DEFAULT_COLORS = {
     ARRAY: '#22C55E',
     PRIMITIVE: '#F59E0B'
 }
+
+export const NODE_TYPES = {
+    OBJECT: 'object',
+    ARRAY: 'array',
+    PRIMITIVE: 'primitive',
+}
