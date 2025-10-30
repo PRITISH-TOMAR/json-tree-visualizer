@@ -41,7 +41,7 @@ const JsonTreeVisualizer = () => {
 
   return (
     <div
-      className=" w-full h-screen sm:h-[90vh] rounded-2xl  overflow-hidden transition-all duration-500 shadow-inner border-2 flex justify-center items-center"
+      className=" w-full h-screen sm:h-[80vh] rounded-2xl  overflow-hidden transition-all duration-500 shadow-inner border-2 flex justify-center items-center"
       style={{ background: bgColor }}
     >
       <ReactFlow
