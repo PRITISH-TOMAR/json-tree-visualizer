@@ -15,10 +15,14 @@ const getParsedJsonFromLocalStorage = () => {
     }
 };
 
-const generateNodesAndEdges = (data) => {
-    const {nodes, edges} = dfsTraverse(getParsedJsonFromLocalStorage());
-    console.log(nodes, edges);
+const generateNodesAndEdges = () => {
+    const { nodes, edges } = dfsTraverse(getParsedJsonFromLocalStorage());
+    console.log("Generated Nodes and Edges:", { nodes, edges });
+    return { nodes, edges };
+
+
 
 }
+
 
 export default generateNodesAndEdges;
