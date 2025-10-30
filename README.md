@@ -1,16 +1,45 @@
-# React + Vite
+# JSON Tree Visualizer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple web app to visualize JSON data as an interactive tree structure.
 
-Currently, two official plugins are available:
+🔗 **Live Demo**: [https://json-tree-visualizer-pink.vercel.app/](https://json-tree-visualizer-pink.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- **Multiple Input Options**: Paste, type, or upload JSON files
+- **Real-time Validation**: Instant JSON syntax validation
+- **Tree Visualization**: Interactive hierarchical tree view using DFS algorithm
+- **4 Theme Options**: Light, Dark, Ocean, and Sunset themes
+- **File Upload**: Support for .json files
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Quick Start
 
-## Expanding the ESLint configuration
+1. Paste or upload your JSON data
+2. Click "Generate Tree"
+3. Explore your data in tree format
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Example
+
+```json
+{
+  "user": {
+    "name": "John Doe",
+    "age": 30,
+    "contact": {
+      "email": "john@example.com",
+      "phone": "+1234567890"
+    },
+    "hobbies": ["coding", "reading"]
+  }
+}
+```
+
+## Screenshot:
+<img width="1886" height="898" alt="image" src="https://github.com/user-attachments/assets/46881fb5-1dc6-47a0-85c2-06ca239c3dd2" />
+
+
+## Algorithm
+
+Uses **Depth-First Search (DFS)** traversal to parse and visualize JSON structures, ensuring all nested objects and arrays are properly explored and displayed in the tree hierarchy.
+
+---
