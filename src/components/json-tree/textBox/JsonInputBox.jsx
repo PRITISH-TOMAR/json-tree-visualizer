@@ -19,7 +19,6 @@ const JsonInputBox = () => {
   const validateJson = (value) => {
     if (value.trim() == "") {
       setError(null);
-      saveJSONToLocalStorage("");
       return;
     }
     try {
